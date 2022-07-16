@@ -1,0 +1,8 @@
+node_modules
+.prettierrc
+.env 
+.history
+artifacts
+cache
+yarn-error.log
+gas-report.txt
