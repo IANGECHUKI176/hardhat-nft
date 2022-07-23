@@ -5,8 +5,7 @@ const fs = require("fs")
 const path = require("path")
 require("dotenv").config()
 
-const NFT_STORAGE_KEY =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDRlNzZGNTliQ0QxOTk3NUZDQkYwN0E3RDNGMjBlOTRCYWFlMkU5MDUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY1NzU2MzQwMTYwNiwibmFtZSI6ImhhcmRoYXQtbmZ0In0.UO2oEQnemjMWSH1cOoespC2ToMwyjQHV_s2BYU0wCuM"
+const NFT_STORAGE_KEY = process.env.NFT_STORAGE_KEY
 
 /**
  * Reads an image file from `imagePath` and stores an NFT with the given name and description.
